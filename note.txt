@@ -1,0 +1,40 @@
+// Here we have Imported Express to use Express 
+const express = require("express");
+
+
+// Yahan per ma ENV file ko require kr rha ho
+require("dotenv").config()
+
+// yahan colors ko require kr rhy hyn
+require("colors");
+
+
+// make an express application 
+
+const app = express();
+
+// yahan per hum apna Server start kr rhy hyn and Por Define lr rhy hyn and
+// Saath jo 2nd Parameter hy whana kuch hum bheejty hyn k Mujah Deekhao bi k mera server start hi chukka
+
+app.listen(process.env.PORT, ()=>console.log(`Server Started on Port ${process.env.PORT.yellow}`)); // ab iss ma hum PORT variable use kr rhy hyn jo hum na import kiyya uper
+
+//apny files ko confidential rakhny k liya Hum env banatay hyn environment variables jo k .env hotaa hy
+
+
+
+
+
+app.use("/",require("./Routes/productroutes"))
+// yahan per uper hum na Routes APIs ki aik new file create ki or yahan " app.use " kay aik function ki maddad sa saaray routes ko apny main file ma lay ayy
+
+
+
+
+
+
+
+
+
+
+
+

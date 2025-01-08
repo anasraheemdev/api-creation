@@ -1,0 +1,23 @@
+Jub bi hum API banatay hyn to uss kay liyya
+app.get() likhty hyn and Then Uss kay andar 2 paramerters Passkrty hyn
+app.get("First Parameter","Second Parameter")
+
+first Parameter ma Name Dety hyn API ka and 2nd ma function
+
+app.get("/products",(req,res)=>{
+
+})
+ab j ya function hyn app.get kay andar ya 2 parameters leta hy, pehla ''request'' and Dousra ''response''
+
+Jub hum na Server ko data dena ho tub '' request '' use hoty hy q k hum server ko request kr rhy hyn k ya data Sambhaal lo
+
+Jub hum nay Server say data dena lena ho tub '' response '' use hoty hy q k ab server hamari call ka response kr rha hy k ya data la lo
+
+app.get("/products", (req, res) => {
+    res.send(
+        "Welcome to 1st API"
+    );
+})
+
+
+// put api ko update krny k liyya use hota hy e.g -->
